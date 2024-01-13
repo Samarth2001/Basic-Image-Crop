@@ -13,8 +13,24 @@ body {
     border: 1px solid #ddd;
 }
 
+#croppedImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 #croppedImages img {
     margin: 10px;
     border: 1px solid #ddd;
     padding: 5px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .image-container img {
+        width: 100%;
+    }
 }

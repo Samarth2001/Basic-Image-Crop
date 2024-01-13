@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Cropper</title>
+    <title>Image Cropper Enhanced</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css"/>
 </head>
 <body>
     <div class="container">
+        <label for="imageInput">Upload Image:</label>
         <input type="file" id="imageInput" accept="image/*">
         <div class="image-container">
             <img id="image" style="max-width: 100%;">
         </div>
+        <select id="aspectRatio">
+            <option value="NaN">Custom</option>
+            <option value="16/9">16:9</option>
+            <option value="4/3">4:3</option>
+            <option value="1/1">1:1</option>
+        </select>
         <input type="number" id="width" placeholder="Width">
         <input type="number" id="height" placeholder="Height">
         <button id="cropBtn">Crop</button>
