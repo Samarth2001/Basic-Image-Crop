@@ -1,0 +1,20 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin: 20px;
+}
+
+.image-container {
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+#croppedImages img {
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
